@@ -1,0 +1,637 @@
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1615895567.921518,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-jenkinsx01-angular8-example-app-c98qd-gf4km[0m
+{"level":"info","ts":1615895577.0924304,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/JenkinsX01/angular8-example-app.git @ v8.0.1 in path /workspace/source"}
+{"level":"warn","ts":1615895577.092556,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1615895577.143598,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-setup-jx-git-credentials[0m
+Generated Git credentials file /workspace/xdg_config/git/credentials
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npmrc[0m
+WARNING: failed to find Secret npm-token in namespace **
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-install[0m
+
+> grpc@1.20.3 install /workspace/source/node_modules/@firebase/firestore/node_modules/grpc
+> node-pre-gyp install --fallback-to-build --library=static_library
+
+node-pre-gyp WARN Using request for node-pre-gyp https download 
+[grpc] Success: "/workspace/source/node_modules/@firebase/firestore/node_modules/grpc/src/node/extension_binary/node-v67-linux-x64-glibc/grpc_node.node" is installed via remote
+
+> grpc@1.21.1 install /workspace/source/node_modules/grpc
+> node-pre-gyp install --fallback-to-build --library=static_library
+
+node-pre-gyp WARN Using request for node-pre-gyp https download 
+[grpc] Success: "/workspace/source/node_modules/grpc/src/node/extension_binary/node-v67-linux-x64-glibc/grpc_node.node" is installed via remote
+
+> husky@2.4.1 install /workspace/source/node_modules/husky
+> node husky install
+
+husky > Setting up git hooks
+CI detected, skipping Git hooks installation.
+
+> core-js@2.6.9 postinstall /workspace/source/node_modules/babel-runtime/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@2.6.9 postinstall /workspace/source/node_modules/karma/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> protobufjs@6.8.8 postinstall /workspace/source/node_modules/protobufjs
+> node scripts/postinstall
+
+
+> @angular/cli@8.0.3 postinstall /workspace/source/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+
+> core-js@3.1.4 postinstall /workspace/source/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.0.7 (node_modules/ng-packagr/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.0.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1849 packages from 1341 contributors and audited 1919 packages in 63.881s
+found 895 vulnerabilities (860 low, 11 moderate, 24 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-npm-test[0m
+
+> angular-example-app@8.0.0 test /workspace/source
+> ng test angularexampleapp --code-coverage --no-watch
+
+Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+
+START:
+[32m16 03 2021 11:54:22.343:INFO [karma-server]: [39mKarma v4.1.0 server started at http://0.0.0.0:9876/
+[32m16 03 2021 11:54:22.346:INFO [launcher]: [39mLaunching browsers ChromeHeadlessNoSandbox with concurrency unlimited
+[32m16 03 2021 11:54:22.444:INFO [launcher]: [39mStarting browser ChromeHeadless
+[32m16 03 2021 11:54:33.098:INFO [HeadlessChrome 83.0.4103 (Linux 0.0.0)]: [39mConnected on socket HBgNS4TWyiXcTQapAAAA with id 92894594
+HeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 0 of 43 SUCCESS (0 secs / 0 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 1 of 43 SUCCESS (0 secs / 0.016 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 2 of 43 SUCCESS (0 secs / 0.034 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 3 of 43 SUCCESS (0 secs / 0.043 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 4 of 43 SUCCESS (0 secs / 0.124 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 5 of 43 SUCCESS (0 secs / 0.136 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 6 of 43 SUCCESS (0 secs / 0.142 secs)
+[33m16 03 2021 11:54:40.005:WARN [web-server]: [39m404: /assets/images/404.gif
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 7 of 43 SUCCESS (0 secs / 0.151 secs)
+[33m16 03 2021 11:54:40.027:WARN [web-server]: [39m404: /assets/images/angular.svg
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 8 of 43 SUCCESS (0 secs / 0.176 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 9 of 43 SUCCESS (0 secs / 0.177 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 10 of 43 SUCCESS (0 secs / 0.191 secs)
+[1A[2KLOG: 'fetched hero BzTvl77YsRTtdihH0jeh'
+HeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 10 of 43 SUCCESS (0 secs / 0.191 secs)
+LOG: 'fetched hero BzTvl77YsRTtdihH0jeh'
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 11 of 43 SUCCESS (0 secs / 0.196 secs)
+[1A[2KLOG: 'fetched heroes'
+HeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 11 of 43 SUCCESS (0 secs / 0.196 secs)
+LOG: 'fetched heroes'
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 12 of 43 SUCCESS (0 secs / 0.199 secs)
+[1A[2KLOG: 'fetched hero noId'
+HeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 12 of 43 SUCCESS (0 secs / 0.199 secs)
+LOG: 'fetched hero noId'
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 13 of 43 SUCCESS (0 secs / 0.2 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 14 of 43 SUCCESS (0 secs / 0.201 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 15 of 43 SUCCESS (0 secs / 0.201 secs)
+[1A[2KLOG: 'updated hero w/ id=undefined'
+HeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 15 of 43 SUCCESS (0 secs / 0.201 secs)
+LOG: 'updated hero w/ id=undefined'
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 16 of 43 SUCCESS (0 secs / 0.201 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 17 of 43 SUCCESS (0 secs / 0.201 secs)
+[1A[2KERROR: Object{message: 'this is an error', status: 404}
+HeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 17 of 43 SUCCESS (0 secs / 0.201 secs)
+ERROR: Object{message: 'this is an error', status: 404}
+[1A[2KLOG: 'getHero failed: this is an error'
+HeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 17 of 43 SUCCESS (0 secs / 0.201 secs)
+LOG: 'getHero failed: this is an error'
+[1A[2KERROR: Object{message: 'this is an error', status: 500}
+HeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 17 of 43 SUCCESS (0 secs / 0.201 secs)
+ERROR: Object{message: 'this is an error', status: 500}
+[1A[2KLOG: 'getHero failed: this is an error'
+HeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 17 of 43 SUCCESS (0 secs / 0.201 secs)
+LOG: 'getHero failed: this is an error'
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 18 of 43 SUCCESS (0 secs / 0.203 secs)
+[33m16 03 2021 11:54:40.325:WARN [web-server]: [39m404: /assets/images/github-circle-white-transparent.svg
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 19 of 43 SUCCESS (0 secs / 0.222 secs)
+[33m16 03 2021 11:54:40.370:WARN [web-server]: [39m404: /assets/images/github-circle-white-transparent.svg
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 20 of 43 SUCCESS (0 secs / 0.237 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 21 of 43 SUCCESS (0 secs / 0.244 secs)
+[1A[2KERROR: 'This is an error', Object{}
+HeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 21 of 43 SUCCESS (0 secs / 0.244 secs)
+ERROR: 'This is an error', Object{}
+[1A[2KLOG: 'This is a log'
+HeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 21 of 43 SUCCESS (0 secs / 0.244 secs)
+LOG: 'This is a log'
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 22 of 43 SUCCESS (0 secs / 0.245 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 23 of 43 SUCCESS (0 secs / 0.272 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 24 of 43 SUCCESS (0 secs / 0.275 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 25 of 43 SUCCESS (0 secs / 0.275 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 26 of 43 SUCCESS (0 secs / 0.275 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 27 of 43 SUCCESS (0 secs / 0.277 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 28 of 43 SUCCESS (0 secs / 0.277 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 29 of 43 SUCCESS (0 secs / 0.278 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 30 of 43 SUCCESS (0 secs / 0.278 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 31 of 43 SUCCESS (0 secs / 0.278 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 32 of 43 SUCCESS (0 secs / 0.282 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 33 of 43 SUCCESS (0 secs / 0.283 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 34 of 43 SUCCESS (0 secs / 0.287 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 35 of 43 SUCCESS (0 secs / 0.297 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 36 of 43 SUCCESS (0 secs / 0.298 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 37 of 43 SUCCESS (0 secs / 0.298 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 38 of 43 SUCCESS (0 secs / 0.298 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 39 of 43 SUCCESS (0 secs / 0.335 secs)
+[33m16 03 2021 11:54:40.776:WARN [web-server]: [39m404: /assets/images/default-hero.png
+[33m16 03 2021 11:54:40.832:WARN [web-server]: [39m404: /assets/images/default-hero.png
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 40 of 43 SUCCESS (0 secs / 0.359 secs)
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 41 of 43 SUCCESS (0 secs / 0.412 secs)
+[33m16 03 2021 11:54:40.906:WARN [web-server]: [39m404: /assets/images/default-hero.png
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 42 of 43 SUCCESS (0 secs / 0.437 secs)
+[33m16 03 2021 11:54:40.957:WARN [web-server]: [39m404: /assets/images/default-hero.png
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 43 of 43 SUCCESS (0 secs / 0.464 secs)
+[33m16 03 2021 11:54:41.002:WARN [web-server]: [39m404: /assets/images/default-hero.png
+[1A[2KHeadlessChrome 83.0.4103 (Linux 0.0.0): Executed 43 of 43 SUCCESS (1.503 secs / 0.464 secs)
+TOTAL: 43 SUCCESS
+TOTAL: 43 SUCCESS
+
+Finished in 1.503 secs / 0.464 secs @ 11:54:41 GMT+0000 (Coordinated Universal Time)
+
+SUMMARY:
+✔ 43 tests completed
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-container-build[0m
+E0316 11:54:42.155632      10 aws_credentials.go:77] while getting AWS credentials NoCredentialProviders: no valid providers in chain. Deprecated.
+	For verbose messaging see aws.Config.CredentialsChainVerboseErrors
+[36mINFO[0m[0000] Resolved base name node:11-alpine to builder 
+[36mINFO[0m[0000] Using dockerignore file: /workspace/source/.dockerignore 
+[36mINFO[0m[0000] Retrieving image manifest node:11-alpine     
+[36mINFO[0m[0001] Retrieving image manifest node:11-alpine     
+[36mINFO[0m[0001] Retrieving image manifest nginx:1-alpine     
+[36mINFO[0m[0001] Retrieving image manifest nginx:1-alpine     
+[36mINFO[0m[0001] Built cross stage deps: map[0:[/angular-example-app/dist/browser/]] 
+[36mINFO[0m[0001] Retrieving image manifest node:11-alpine     
+[36mINFO[0m[0001] Retrieving image manifest node:11-alpine     
+[36mINFO[0m[0002] Executing 0 build triggers                   
+[36mINFO[0m[0010] Checking for cached layer karriacr.azurecr.io/todo/cache:1808a98f9a8576187740d53d2400597d96b6d1b945592e551e985de6e8e79186... 
+[36mINFO[0m[0010] No cached layer found for cmd COPY . ./angular-example-app 
+[36mINFO[0m[0010] Unpacking rootfs as cmd COPY . ./angular-example-app requires it. 
+[36mINFO[0m[0020] COPY . ./angular-example-app                 
+[36mINFO[0m[0030] Resolving 372 paths                          
+[36mINFO[0m[0030] Taking snapshot of files...                  
+[36mINFO[0m[0030] WORKDIR /angular-example-app                 
+[36mINFO[0m[0030] cmd: workdir                                 
+[36mINFO[0m[0030] Changed working directory to /angular-example-app 
+[36mINFO[0m[0030] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0030] RUN npm install                              
+[36mINFO[0m[0030] Taking snapshot of full filesystem...        
+[36mINFO[0m[0030] Pushing layer karriacr.azurecr.io/todo/cache:1808a98f9a8576187740d53d2400597d96b6d1b945592e551e985de6e8e79186 to cache now 
+[36mINFO[0m[0032] Resolving 6139 paths                         
+[36mINFO[0m[0033] cmd: /bin/sh                                 
+[36mINFO[0m[0033] args: [-c npm install]                       
+[36mINFO[0m[0033] Running: [/bin/sh -c npm install]            
+
+> grpc@1.20.3 install /angular-example-app/node_modules/@firebase/firestore/node_modules/grpc
+> node-pre-gyp install --fallback-to-build --library=static_library
+
+node-pre-gyp WARN Using request for node-pre-gyp https download 
+[grpc] Success: "/angular-example-app/node_modules/@firebase/firestore/node_modules/grpc/src/node/extension_binary/node-v67-linux-x64-musl/grpc_node.node" is installed via remote
+
+> grpc@1.21.1 install /angular-example-app/node_modules/grpc
+> node-pre-gyp install --fallback-to-build --library=static_library
+
+node-pre-gyp WARN Using request for node-pre-gyp https download 
+[grpc] Success: "/angular-example-app/node_modules/grpc/src/node/extension_binary/node-v67-linux-x64-musl/grpc_node.node" is installed via remote
+
+> husky@2.4.1 install /angular-example-app/node_modules/husky
+> node husky install
+
+husky > Setting up git hooks
+husky > Done
+husky > Like husky? You can support the project on Patreon:
+husky > [36mhttps://www.patreon.com/typicode[0m 🐕
+
+> core-js@2.6.9 postinstall /angular-example-app/node_modules/babel-runtime/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> core-js@2.6.9 postinstall /angular-example-app/node_modules/karma/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+
+> protobufjs@6.8.8 postinstall /angular-example-app/node_modules/protobufjs
+> node scripts/postinstall
+
+
+> @angular/cli@8.0.3 postinstall /angular-example-app/node_modules/@angular/cli
+> node ./bin/postinstall/script.js
+
+
+> core-js@3.1.4 postinstall /angular-example-app/node_modules/core-js
+> node scripts/postinstall || echo "ignore"
+
+[96mThank you for using core-js ([94m https://github.com/zloirock/core-js [96m) for polyfilling JavaScript standard library![0m
+
+[96mThe project needs your help! Please consider supporting of core-js on Open Collective or Patreon: [0m
+[96m>[94m https://opencollective.com/core-js [0m
+[96m>[94m https://www.patreon.com/zloirock [0m
+
+[96mAlso, the author of core-js ([94m https://github.com/zloirock [96m) is looking for a good job -)[0m
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@2.0.7 (node_modules/ng-packagr/node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@2.0.7: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.9 (node_modules/fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.9: wanted {"os":"darwin","arch":"any"} (current: {"os":"linux","arch":"x64"})
+
+added 1849 packages from 1341 contributors and audited 1919 packages in 68.636s
+found 895 vulnerabilities (860 low, 11 moderate, 24 high)
+  run `npm audit fix` to fix them, or `npm audit` for details
+[36mINFO[0m[0103] Taking snapshot of full filesystem...        
+[36mINFO[0m[0109] Resolving 109838 paths                       
+[36mINFO[0m[0164] Pushing layer karriacr.azurecr.io/todo/cache:5c73be862bb20cb91b08e0e99bfe986ee7dff115873795efc8e85ff56fd5d31c to cache now 
+[36mINFO[0m[0164] RUN npm run build:prod:en                    
+[36mINFO[0m[0164] cmd: /bin/sh                                 
+[36mINFO[0m[0164] args: [-c npm run build:prod:en]             
+[36mINFO[0m[0164] Running: [/bin/sh -c npm run build:prod:en]  
+
+> angular-example-app@8.0.0 build:prod:en /angular-example-app
+> ng build --configuration=production-en
+
+Browserslist: caniuse-lite is outdated. Please run next command `npm update`
+
+Date: 2021-03-16T11:59:22.626Z
+Hash: 0df7491bd22a16a9979b
+Time: 105426ms
+chunk {0} runtime-es5.2b0a65f14294db5be839.js (runtime) 2.15 kB [entry] [rendered]
+chunk {1} main-es5.ff37e1deabeb0a74020d.js (main) 1.42 MB [initial] [rendered]
+chunk {2} polyfills-es5.a17668551f01d2e249e3.js (polyfills) 133 kB [initial] [rendered]
+chunk {3} styles.a96cfd8039efe0d4c3e5.css (styles) 66.5 kB [initial] [rendered]
+chunk {4} 4-es5.e8d2412faeee5176bdb1.js () 48.5 kB  [rendered]
+chunk {scripts} scripts.910427f6263a42734cd9.js (scripts) 1.95 kB [entry] [rendered]
+
+Date: 2021-03-16T12:00:43.670Z
+Hash: 4d47d9c4a394176e5a9b
+Time: 80960ms
+chunk {0} runtime-es2015.57596d6713f936f5ca33.js (runtime) 2.15 kB [entry] [rendered]
+chunk {1} main-es2015.ca5762490bc5fe104e09.js (main) 1.32 MB [initial] [rendered]
+chunk {2} polyfills-es2015.e9d98e5e92b2651695d5.js (polyfills) 58.5 kB [initial] [rendered]
+chunk {3} styles.a96cfd8039efe0d4c3e5.css (styles) 66.5 kB [initial] [rendered]
+chunk {4} 4-es2015.8fc24ffa3a6fee6ad1df.js () 48.1 kB  [rendered]
+chunk {scripts} scripts.910427f6263a42734cd9.js (scripts) 1.95 kB [entry] [rendered]
+[36mINFO[0m[0362] Taking snapshot of full filesystem...        
+[36mINFO[0m[0362] Resolving 109950 paths                       
+[36mINFO[0m[0403] Pushing layer karriacr.azurecr.io/todo/cache:170d63f3cc04eb5b0629ae89e19c31bea6a6ffff8da5325ee12e8c04bcc491ea to cache now 
+[36mINFO[0m[0406] Saving file angular-example-app/dist/browser for later use 
+[36mINFO[0m[0406] Deleting filesystem...                       
+[36mINFO[0m[0613] Retrieving image manifest nginx:1-alpine     
+[36mINFO[0m[0616] Retrieving image manifest nginx:1-alpine     
+[36mINFO[0m[0616] Executing 0 build triggers                   
+[36mINFO[0m[0616] Checking for cached layer karriacr.azurecr.io/todo/cache:9a7c384a21ee25249b210500077e66462444a4d9c5f285657668ab63714b4822... 
+[36mINFO[0m[0617] No cached layer found for cmd COPY --from=builder /angular-example-app/dist/browser/ /usr/share/nginx/html 
+[36mINFO[0m[0617] cmd: EXPOSE                                  
+[36mINFO[0m[0617] Adding exposed port: 80/tcp                  
+[36mINFO[0m[0617] Unpacking rootfs as cmd COPY --from=builder /angular-example-app/dist/browser/ /usr/share/nginx/html requires it. 
+[36mINFO[0m[0618] COPY --from=builder /angular-example-app/dist/browser/ /usr/share/nginx/html 
+[36mINFO[0m[0618] Resolving 39 paths                           
+[36mINFO[0m[0618] Taking snapshot of files...                  
+[36mINFO[0m[0618] EXPOSE 80                                    
+[36mINFO[0m[0618] cmd: EXPOSE                                  
+[36mINFO[0m[0618] Adding exposed port: 80/tcp                  
+[36mINFO[0m[0618] No files changed in this command, skipping snapshotting. 
+[36mINFO[0m[0618] Pushing layer karriacr.azurecr.io/todo/cache:9a7c384a21ee25249b210500077e66462444a4d9c5f285657668ab63714b4822 to cache now 
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-build-post-build[0m
+no CVE provider running in the current ** namespace so skip adding image to be analysed
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-changelog[0m
+Converted /workspace/source/charts/angular8-example-app to an unshallow repository
+Generating change log from git ref 4db0021e7107c7c3ca6ef37d3dc2027777642c7a => 7d4714464d35850131104a409f97a1e0ce9f632a
+Associating user jenkins-x-bot in users.jenkins.io with email jenkins-x@googlegroups.com to git GitProvider user with login jenkins-x-bot-0 as emails match
+Adding label jenkins.io/git-github-userid=jenkins-x-bot-0 to user jenkins-x-bot in users.jenkins.io
+Associating user jenkins-x-bot in users.jenkins.io with email jenkins-x@googlegroups.com to git GitProvider user with login jenkins-x-bot-0 as emails match
+Adding label jenkins.io/git-github-userid=jenkins-x-bot-0 to user jenkins-x-bot in users.jenkins.io
+Finding issues in commit messages using git format
+Associating user jenkins-x-bot in users.jenkins.io with email jenkins-x@googlegroups.com to git GitProvider user with login jenkins-x-bot-0 as emails match
+Adding label jenkins.io/git-github-userid=jenkins-x-bot-0 to user jenkins-x-bot in users.jenkins.io
+Associating user jenkins-x-bot in users.jenkins.io with email jenkins-x@googlegroups.com to git GitProvider user with login jenkins-x-bot-0 as emails match
+Adding label jenkins.io/git-github-userid=jenkins-x-bot-0 to user jenkins-x-bot in users.jenkins.io
+Associating user github in users.jenkins.io with email noreply@github.com to git GitProvider user with login github-0 as emails match
+Adding label jenkins.io/git-github-userid=github-0 to user github in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user dependabot-bot in users.jenkins.io with email 49699333+dependabot[bot]@users.noreply.github.com to git GitProvider user with login dependabot[bot]-0 as emails match
+Adding label jenkins.io/git-github-userid=dependabot[bot]-0 to user dependabot-bot in users.jenkins.io
+Associating user github in users.jenkins.io with email noreply@github.com to git GitProvider user with login github-0 as emails match
+Adding label jenkins.io/git-github-userid=github-0 to user github in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user github in users.jenkins.io with email noreply@github.com to git GitProvider user with login github-0 as emails match
+Adding label jenkins.io/git-github-userid=github-0 to user github in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user github in users.jenkins.io with email noreply@github.com to git GitProvider user with login github-0 as emails match
+Adding label jenkins.io/git-github-userid=github-0 to user github in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user github in users.jenkins.io with email noreply@github.com to git GitProvider user with login github-0 as emails match
+Adding label jenkins.io/git-github-userid=github-0 to user github in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user github in users.jenkins.io with email noreply@github.com to git GitProvider user with login github-0 as emails match
+Adding label jenkins.io/git-github-userid=github-0 to user github in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user github in users.jenkins.io with email noreply@github.com to git GitProvider user with login github-0 as emails match
+Adding label jenkins.io/git-github-userid=github-0 to user github in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user github in users.jenkins.io with email noreply@github.com to git GitProvider user with login github-0 as emails match
+Adding label jenkins.io/git-github-userid=github-0 to user github in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user github in users.jenkins.io with email noreply@github.com to git GitProvider user with login github-0 as emails match
+Adding label jenkins.io/git-github-userid=github-0 to user github in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user ismael-ramos in users.jenkins.io with email ramos.silvan.ismael@gmail.com to git GitProvider user with login ismael-ramos-0 as emails match
+Adding label jenkins.io/git-github-userid=ismael-ramos-0 to user ismael-ramos in users.jenkins.io
+Associating user iramos in users.jenkins.io with email isma@metastartup.com to git GitProvider user with login iramos-0 as emails match
+Adding label jenkins.io/git-github-userid=iramos-0 to user iramos in users.jenkins.io
+Associating user github in users.jenkins.io with email noreply@github.com to git GitProvider user with login github-0 as emails match
+Adding label jenkins.io/git-github-userid=github-0 to user github in users.jenkins.io
+Associating user snyk-bot in users.jenkins.io with email snyk-bot@snyk.io to git GitProvider user with login snyk-bot-0 as emails match
+Adding label jenkins.io/git-github-userid=snyk-bot-0 to user snyk-bot in users.jenkins.io
+WARNING: No release found for JenkinsX01/angular8-example-app and tag v8.0.1 so creating a new release
+Updated the release information at https://github.com/JenkinsX01/angular8-example-app/releases/tag/v8.0.1
+generated: /workspace/source/charts/angular8-example-app/templates/release.yaml
+Created Release angular8-example-app-8-0-1 resource in namespace **
+Updating PipelineActivity jenkinsx01-angular8-example-app-master-1 with version 8.0.1
+Updated PipelineActivities jenkinsx01-angular8-example-app-master-1 with release notes URL: https://github.com/JenkinsX01/angular8-example-app/releases/tag/v8.0.1
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-helm-release[0m
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Adding missing Helm repo: storage.googleapis.com https://storage.googleapis.com/chartmuseum.jenkins-x.io
+Successfully added Helm repository storage.googleapis.com.
+Adding missing Helm repo: jenkins-x-chartmuseum http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository jenkins-x-chartmuseum.
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Uploading chart file angular8-example-app-8.0.1.tgz to http://jenkins-x-chartmuseum:8080/api/charts
+Received 201 response: {"saved":true}
+
+Showing logs for build [32mjenkinsx01-angular8-example-app-c98qd-1[0m stage [32mfrom-build-pack[0m and container [32mstep-promote-jx-promote[0m
+WARNING: prow based install so skip waiting for the merge of Pull Requests to go green as currently there is an issue with gettingstatuses from the PR, see https://github.com/jenkins-x/**/issues/2410
+WARNING: No $CHART_REPOSITORY defined so using the default value of: http://jenkins-x-chartmuseum:8080
+Promoting app angular8-example-app version 8.0.1 to namespace **-staging
+Created Pull Request: https://github.com/JenkinsX01/environment-**akscluster-staging/pull/19
+Added label updatebot to Pull Request https://github.com/JenkinsX01/environment-**akscluster-staging/pull/19
+got git provider status pending from PR https://github.com/JenkinsX01/environment-**akscluster-staging/pull/19
+Pull Request https://github.com/JenkinsX01/environment-**akscluster-staging/pull/19 is merged at sha cdba7d5de0957b6b6ae871b9769568d45d0746f4
+Pull Request merged but we are not waiting for the update pipeline to complete!
+WARNING: Could not find the service URL in namespace **-staging for names angular8-example-app, **-angular8-example-app, **-staging-angular8-example-app
